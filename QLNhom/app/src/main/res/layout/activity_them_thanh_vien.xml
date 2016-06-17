@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.ThemThanhVien"
+    android:background="@drawable/ttttt">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ten thanh vien"
+        android:layout_below="@+id/txtThemNhom"
+        android:textColorHint="#e728de"
+        android:textColor="#ff7b00"
+        android:id="@+id/edTenThanhVien"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edLop"
+        android:textColor="#ffffff"
+        android:textColorHint="#e728de"
+        android:layout_below="@+id/edTenThanhVien"
+        android:layout_marginTop="0dp"
+        android:hint="Lop"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edLop"
+        android:textColorHint="#e728de"
+        android:hint="Dien thoai"
+        android:textColor="#ffffff"
+        android:numeric="integer"
+        android:id="@+id/edDienThoai"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edDienThoai"
+        android:textColorHint="#e728de"
+        android:hint="Sở thích"
+        android:textColor="#ffffff"
+        android:id="@+id/edSoThich"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSoThich"
+        android:textColorHint="#e728de"
+        android:hint="Sở trường"
+        android:textColor="#ffffff"
+        android:id="@+id/edSoTruong"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSoTruong"
+        android:textColorHint="#e728de"
+        android:hint="Sở đoản"
+        android:textColor="#ffffff"
+        android:id="@+id/edSoDoan"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSoDoan"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Thêm"
+            android:id="@+id/btnThemThanhVien"
+         android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:textColor="#4506d9"
+
+            style="@android:style/Widget.Material.Light.Button"
+            android:theme="@style/Platform.V14.AppCompat.Light"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/btnThoatThemThanhVien"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/btnThemNhom"
+            android:textSize="20dp"
+            android:text="Thoát"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.Material.Light.Button"
+            android:theme="@style/Platform.V14.AppCompat.Light"
+            android:textColor="#4506d9"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

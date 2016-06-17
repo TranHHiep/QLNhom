@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.ThongTin"
+    android:background="@color/design_fab_stroke_end_outer_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+      >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+          >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:paddingLeft="40dp"
+               android:paddingRight="20dp"
+                android:layout_marginTop="15dp"
+               android:id="@+id/thongtin"
+               android:orientation="horizontal"
+               >
+               <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/hinhanh"
+                android:src="@drawable/lachong"
+                android:radius="50pt"
+                android:layout_gravity="center"
+                />
+               <!--<de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/hinhanh"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/hinh2"
+                   app:civ_border_width="2dp"
+                   app:civ_border_color="#9b0e0e"/>
+-->
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/listthanhvien"
+                   android:background="#00f837ff"
+                   android:layout_marginLeft="40dp"
+                   ></ListView>
+           </LinearLayout>
+
+           <Button
+               android:layout_marginTop="30dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/thongtin"
+
+               android:layout_marginLeft="40dp"
+               android:textSize="20dp"
+               android:text= "+  Thêm Thành Viên"
+               android:textColor="#0d55fc"
+               android:background="#000d55fc"
+               android:id="@+id/btnthemthanhvien"
+
+               android:theme="@style/Platform.V14.AppCompat.Light" />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_below="@+id/btnthemthanhvien"
+               android:id="@+id/view"
+               android:layout_marginTop="1dp"
+               android:background="#c9c9c9" />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:layout_marginTop="13dp"
+               android:text="Danh sách dự án"
+               android:layout_below="@+id/view"
+               android:textSize="20dp"
+               android:layout_marginLeft="25dp"
+               android:id="@+id/txtthemduan"
+               android:textColor="#0af972"
+               android:theme="@style/Base.V12.Widget.AppCompat.AutoCompleteTextView" />
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="250dp"
+               android:layout_below="@id/txtthemduan"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="25dp"
+               android:background="#0012ddec"
+                android:id="@+id/listduan"
+
+               ></ListView>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_below="@+id/listduan"
+               android:id="@+id/view1"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_marginTop="1dp"
+               android:background="#c9c9c9" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/btnthemduan"
+               android:layout_below="@+id/listduan"
+               android:layout_marginTop="30dp"
+               android:layout_marginLeft="40dp"
+               android:textSize="20dp"
+               android:text="+  Thêm dự án"
+               android:textColor="#0d55fc"
+               android:background="#000d55fc"
+               android:theme="@style/Platform.V14.AppCompat.Light"
+               />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_below="@+id/btnthemduan"
+               android:id="@+id/view2"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_marginTop="1dp"
+               android:background="#c9c9c9" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/view2"
+               android:text="-  Xóa nhóm"
+               android:background="#00ff030f"
+               android:id="@+id/btnxoanhom"
+               android:textSize="20dp"
+               android:layout_marginLeft="40dp"
+               android:layout_marginTop="1dp"
+               android:theme="@style/Platform.V14.AppCompat.Light"
+               android:textColor="#ff030f"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:layout_below="@+id/btnxoanhom"
+               android:id="@+id/view3"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_marginTop="1dp"
+
+
+               android:background="#c9c9c9" />
+       </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

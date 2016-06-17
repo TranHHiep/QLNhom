@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.ThemDuAn">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Tên dự án"
+        android:textColorHint="#e728de"
+        android:textColor="#ff7b00"
+        android:id="@+id/edTenDuAn"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edNgayBatDau"
+        android:textColorHint="#e728de"
+        android:layout_below="@+id/edTenDuAn"
+        android:layout_marginTop="0dp"
+        android:hint="Ngày bắt đầu"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNgayBatDau"
+        android:textColorHint="#e728de"
+        android:hint="Ngày kết thúc"
+        android:id="@+id/edNgayKetThuc"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNgayKetThuc"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Thêm"
+        android:id="@+id/btnThemDuAn"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="#4506d9"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:id="@+id/btnThoatDuAn"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/btnThemDuAn"
+        android:textSize="20dp"
+        android:text="Thoát"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"
+        android:textColor="#4506d9"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

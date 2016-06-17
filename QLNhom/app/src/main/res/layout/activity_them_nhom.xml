@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.ThemNhom">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Nhóm"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="#dc175f"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtThemNhom"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ten nhom"
+        android:layout_below="@+id/txtThemNhom"
+        android:textColorHint="#e728de"
+        android:textColor="#ff7b00"
+        android:id="@+id/edTenNhom"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edNhomTruong"
+        android:textColorHint="#e728de"
+        android:layout_below="@+id/edTenNhom"
+        android:layout_marginTop="0dp"
+        android:hint="Nhom truong"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNhomTruong"
+        android:textColorHint="#e728de"
+        android:hint="So luong thanh vien"
+        android:numeric="integer"
+        android:id="@+id/edSoLuong"
+
+        />
+    <Button
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSoLuong"
+        android:text="Thêm Nhóm"
+        android:id="@+id/btnThemNhom"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="#4506d9"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThoat"
+        android:layout_below="@id/btnThemNhom"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Thoát"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"
+        android:textColor="#4506d9"
+        />
+
+</RelativeLayout>

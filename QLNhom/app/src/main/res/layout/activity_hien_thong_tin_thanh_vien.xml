@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.HienThongTinThanhVien"
+    android:background="@color/material_blue_grey_900">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Họ và tên"
+            android:text="232"
+            android:textSize="30dp"
+            android:textColor="#ff00a6"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:id="@+id/hiententhanhvien"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Lớp"
+            android:textColor="#ffae51"
+            android:layout_marginTop="14dp"
+            android:text="dasdasdas"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/view"
+            android:id="@+id/hienlop"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/hienlop"
+
+            android:id="@+id/view2"
+            android:layout_marginTop="1dp"
+            android:background="#c9c9c9" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Điện thoại"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="232"
+            android:layout_below="@+id/view2"
+            android:id="@+id/hiendienthoai"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/hiendienthoai"
+
+            android:id="@+id/view3"
+            android:layout_marginTop="1dp"
+            android:background="#c9c9c9" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/view3"
+            android:id="@+id/hiensothich"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffae51"
+            android:gravity="center_vertical"
+            android:text="232"
+            android:hint="So thich"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/hiensothich"
+            android:id="@+id/view4"
+            android:layout_marginTop="1dp"
+            android:background="#c9c9c9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/view4"
+            android:id="@+id/hiensotruong"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:text="232"
+            android:hint="So truong"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/hiensotruong"
+            android:id="@+id/view5"
+            android:layout_marginTop="1dp"
+            android:background="#c9c9c9" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/view5"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="232"
+            android:id="@+id/hiensodoan"
+            android:textColor="#ffae51"
+            android:hint="So doan"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_below="@+id/hiensodoan"
+            android:id="@+id/view6"
+            android:layout_marginTop="1dp"
+            android:background="#c9c9c9" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view6"
+            android:layout_marginTop="10dp"
+            android:weightSum="10">
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="  Xóa thành viên"
+                android:id="@+id/btnXoaThanhVien"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="#ff0e06"
+                android:layout_marginTop="20dp"
+
+                style="@android:style/Widget.Material.Light.Button"
+                android:theme="@style/Platform.V14.AppCompat.Light"
+                android:background="@color/background_floating_material_light" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monkeyd.qlnhom.Main.Activity.Nhom"
+    android:background="@color/design_fab_stroke_top_outer_color">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnadd"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+       >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/lwnhom"
+
+            android:layout_marginRight="00dp"
+            android:layout_marginBottom="0dp">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnadd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ff00b2"
+        android:text="Thêm nhóm"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Design by Quan"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txttennhomcanlay"
+        android:textColor="#0073ff"/>
+
+</RelativeLayout>

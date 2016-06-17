@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/material_blue_grey_900"
+    tools:context=".Main.Activity.HienThongTinDuAn">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Nghiên cứu Rasperry"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ff00a6"
+        android:id="@+id/hientenduan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/hientenduan"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="22/12/2016"
+        android:textColor="#ffffff"
+        android:id="@+id/hienngaybatdau"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+
+        android:layout_below="@+id/hienngaybatdau"
+
+        android:id="@+id/view"
+        android:layout_marginTop="1dp"
+        android:background="#c9c9c9" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:text="12/12/20012"
+        android:layout_marginTop="10dp"
+        android:id="@+id/hienngayketthuc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_below="@+id/hienngayketthuc"
+
+        android:id="@+id/view2"
+        android:layout_marginTop="1dp"
+        android:background="#c9c9c9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="20dp"
+            android:text="Tiến độ dự án."
+            android:textSize="19dp"
+            android:gravity="center_vertical"
+            android:textColor="#fffb00"
+            android:id="@+id/thongtintiendo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tiendoduan"
+            android:layout_below="@+id/thongtintiendo"
+            android:textColor="#ffffff"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/thongtintiendo"
+        android:textColor="#0062ea"
+        android:id="@+id/hientiendo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật tiến độ"
+        android:layout_below="@+id/tiendo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Capnhattiendo"
+        style="@android:style/Widget.Material.Light.Button"
+        android:theme="@style/Platform.V14.AppCompat.Light"
+        android:background="@color/background_floating_material_light"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa dự án"
+            android:layout_below="@+id/Capnhattiendo"
+            android:id="@+id/XoaDuAn"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff0000"
+            style="@android:style/Widget.Material.Light.Button"
+            android:theme="@style/Platform.V14.AppCompat.Light"
+            android:background="@color/background_floating_material_light"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
